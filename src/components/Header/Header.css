@@ -1,0 +1,76 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 10rem;
+    height: 3rem;
+}
+
+.left-h{
+    padding: 2rem;
+    padding-top: 1.5rem; 
+    flex: 3;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.header-menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    color:white;
+}
+
+.right-h{
+    flex: 1;
+}
+
+.header-menu > li:hover {
+    color: var(--orange);
+    cursor: pointer;
+}
+
+ .the-best-ad{
+    margin-top: 4rem;
+    background-color: #363d42;
+    width: fit-content;
+    padding: 20px 13px;
+    border-radius: 4rem;
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+ }
+
+ .the-best-ad > span {
+    z-index: 2;
+ }
+
+ .the-best-ad > div {
+    position: absolute;
+    background-color: var(--orange);
+    width: 5.4rem;
+    height: 80%;
+    left: 8px;
+    border-radius: 3rem;
+    z-index: 1;
+ }
+
+ @media screen and (max-width: 800px){
+    .header > :nth-child(2){
+        position: fixed;
+        right: 2rem;
+        z-index: 99;
+    }
+
+    .header-menu {
+        flex-direction: column;
+        background-color: var(--appColor);
+        padding: 2rem;
+    }
+ }
